@@ -1,0 +1,246 @@
+
+body{
+    margin-top: 50px;
+    background-color: teal;
+
+}
+.navBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border-bottom: 1px solid white;
+    z-index: 100;
+}
+.menuBar {
+    color: white;
+    padding: 0px 16px;  
+    line-height: 38px;
+    font-family: Helvetica;
+    list-style: none;
+        
+}
+
+h1{ 
+   font-family: "futura";
+    text-align: center;
+    font-size: 50px;
+    margin-top: 110px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    background-color: gold;
+
+    
+}
+.outterContainer{
+    display: none;
+
+}
+
+.imagesOnTop1, .imagesOnTop2, .imagesOnTop3, .imagesOnTop4{
+    height: 80%;
+    width: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.imagesOnTop1 {
+    background-image: url("http://headphonecharts.com/img/Sennheiser-Orpheus-HE1060-expensive-headphones-index.jpg");
+}
+
+.imagesOnTop2{
+    background-image: url("http://www.lifeissweetcandystore.com/wp-content/uploads/2016/04/foodcandy.jpg");
+}
+
+.imagesOnTop3{
+    background-image: url("http://www.travelthisplanet.com/wp-content/uploads/2015/09/Travel-Water-Bottle.jpg");
+
+}
+
+.imagesOnTop4{
+    background-image: url("https://cdn-images.threadless.com/threadless-shop/products/7600/1272x920vneck_guys_01.jpg?w=610&h=744");
+
+}
+
+.paragraphSetter{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: Helvetica; 
+}
+
+.carouselbox {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid gold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+
+}
+ 
+.innerContainer1{
+    width: 100%;
+    height:100%;
+    background-color: white;
+
+}
+
+.active {
+    height: 300px;
+}
+
+.active li {
+    position: absolute;
+    top: 300px;
+}
+
+.active li.current {
+    top: 30px;
+}
+.buttons {
+      display: none;
+    
+}
+    
+.active .buttons {
+    display: block;
+    padding: 5px 0;
+    background: black;
+    text-align: center;
+    position: relative;
+    
+}
+
+    /* */
+.carouselbox button {
+    border: none;
+    visibility: hidden;
+    
+}
+
+.active button {
+    visibility: visible;
+    
+} 
+
+.offscreen {
+    position: absolute;
+    left: -2000px;
+
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+   /* z-index: 99999; */
+    padding-top: 0px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+   /* background-color: rgb(0,0,0);*/ /* Fallback color */
+    background-color: rgba(0,0,0,0.7); 
+   
+}
+
+.modal-content {
+    background-color: white ;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    opacity: 0;
+    
+}
+.e-mail{
+     display:block;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+.carouselbox {
+    display:none;
+
+}
+ 
+li {
+    float: left;
+         
+}
+
+.navBar{
+   height: 76px;
+    
+}
+
+h1 {
+    margin-top: 100px;
+
+}
+
+.outterContainer {
+    border:2px solid black;
+    display:flex;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+    background-color: gold;
+    width:80%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+
+}
+
+
+.innerContainer{
+    width: 300px;
+    height: 300px;
+    border: 20px solid teal;
+    margin:20px auto;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+.paragraphSetter{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+   
+}
+
+
+.imagesOnTop {
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL4wpEEbkUgrbLXCF5YPrg9YFAN7cv-t2OdWy2_kgNn10_3iWQn-2qORk");
+    height: 80%;
+    width: 100%;
+    background-size: 100% 100%;
+
+}
+
+
+
+}
+/*  the flex-wrap and display:flex allowing the images to adjust*/
+@media all and (min-width: 992px) {
+
+}
+
+@media all and (min-width: 1200px) {
+
+}
